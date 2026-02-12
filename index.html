@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fraternal Photo | Michigan Installation Photographer</title>
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://api.fontshare.com/css?f[]=Zorzal[wght@400;700]&display=swap">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+  
+
+  <style>
+    :root {
+      --bg: #0f1f33;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --accent: #1d4ed8;
+      --radius: 12px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+.subtitle {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #4b5563;
+  margin-top: -0.25rem;
+  margin-bottom: 1rem;
+  font-variant-caps: all-small-caps;
+  letter-spacing: 0.08em;
+}
+
+body {
+  margin: 0;
+  font-family: 'Zorzal', 'Inter', system-ui, sans-serif;
+  background-color: #0f1f33;
+  background-image: url("file:///C:/Users/vklei/OneDrive/Desktop/sacred-geometry.png"
+);
+  background-repeat: repeat;
+  background-size: 1220px;
+  background-attachment: fixed;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 31, 51, 0.84); /* ↑ higher = more subtle */
+  pointer-events: none;
+  z-index: -1;
+}
+
+header hr {
+  border: none;
+  height: 1px;
+  width: 250px;          /* ← controls length */
+  margin: 1.25rem auto; /* centered */
+  background-color: rgba(15, 31, 51, 0.35);
+}
+
+
+    .page {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background: var(--card);
+      border-radius: var(--radius);
+    }
+
+.date {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #0f1f33; /* matches your navy background */
+}
+
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    header h1 {
+      margin-bottom: 0.5rem;
+      font-size: 3rem;
+    }
+
+    header p {
+      color: var(--muted);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .card {
+      border: 1px solid #e5e7eb;
+      border-radius: var(--radius);
+      padding: 1.5rem;
+    }
+.card h3 {
+  margin-top: 0;
+}
+    .card button {
+      margin-top: 1rem;
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      padding: 0.75rem 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 0.95rem;
+    }
+
+    .timeline {
+      margin-bottom: 3rem;
+    }
+
+    .month {
+      border: 1px solid #e5e7eb;
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .month h3 {
+      margin-top: 0;
+    }
+
+    form {
+      display: grid;
+      gap: 1rem;
+    }
+
+.cta-link {
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--accent);
+  color: #fff;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  text-decoration: none;
+  letter-spacing: 0.04em;
+}
+
+.cta-link:hover {
+  font-weight: 600;
+}
+
+.entry {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 2rem;
+  align-items: baseline;
+}
+
+.entry-link {
+  color: #1d4ed8;
+  text-decoration: none;
+  font-weight: 400;
+  position: relative;
+}
+
+/* reserve space for bold */
+.entry-link::after {
+  content: attr(data-text);
+  font-weight: 700;
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+  display: block;
+}
+
+.date {
+  white-space: nowrap;
+}
+.entry-link:hover {
+  font-weight: 700;
+}
+
+.two-col > div:first-child {
+  padding-left: 1.5rem;
+}
+
+
+    input, textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border-radius: 8px;
+      border: 1px solid #d1d5db;
+      font-family: inherit;
+    }
+
+    textarea {
+      min-height: 120px;
+    }
+
+    button[type="submit"] {
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      padding: 0.75rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 2rem;
+    }
+
+h1, h2, h3 {
+  font-family: 'Zorzal', serif;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: clamp(2.2rem, 4vw, 2.75rem);
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 3rem;
+}
+
+h3 {
+  font-size: 1.15rem;
+}
+
+    @media (max-width: 768px) {
+      .two-col {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <main class="page">
+    <header>
+  <h1>FRATERNAL PHOTOS</h1>
+  <p class="subtitle">Valerie Kleinheksel, Photographer</p>
+  <!--<p>Serving Michigan fraternal organizations with installation photography.</p>-->
+<hr></header>
+
+    <section class="two-col">
+      <div>
+        <p>
+          Images are stored in a Google Drive folder and ready for you to download and use as you'd like. Events are organized by date in chronological order. If you have any issues accessing your organization's file, please contact me by email or phone. Thank you!
+        </p>
+        
+      </div>
+
+      <div class="card">
+        <h3>HAVE QUESTIONS?</h3> <p>Email me at <a href=mailto:vkleinheksel@gmail.com>vkleinheksel@gmail.com</a> or click the button to send a message through the site.</p>
+        <a href="#contact" class="cta-link">Send a Message</a>
+
+      </div>
+    </section>
+
+    <section class="timeline">
+      <div class="month">
+        <h3>JANUARY 2026</h3>
+        <div class="entries">
+
+
+  <div class="entry">
+    <span class="date">January 10, 2026</span>
+   <a
+  href="https://drive.google.com/drive/folders/1RJZnyxr9_GGmX2WftUcqiviRnC_b2fpn?usp=drive_link"
+  class="entry-link"
+  target="_blank"
+  data-text="Mount Clemens Lodge #6 Installation"
+>
+  Mount Clemens Lodge #6 Installation
+</a>
+  </div>
+
+  <div class="entry">
+    <span class="date">January 17, 2026</span>
+    <a href="https://drive.google.com/drive/folders/1QYMJG6kV9scPcJWdVRX2DySGcsEtV8Li?usp=drive_link" class="entry-link" target="_blank" data-text="Utica-Macomb Lodge #64 Installation">Utica-Macomb Lodge #64 Installation</a>
+  </div>
+
+  <div class="entry">
+    <span class="date">January 31, 2026</span>
+    <a href="https://drive.google.com/drive/folders/12IQuiiloUzQaTTN8J4Klo9uu1UHmkmM0?usp=drive_link" class="entry-link" target="_blank">THE Brotherhood Lodge #468 Installation</a>
+  </div>
+</div>
+
+      </div>
+
+      <div class="month">
+        <h3>DECEMBER 2025</h3>
+        <div class="entries">
+
+
+  <div class="entry">
+    <span class="date">December 15, 2025</span>
+   <a
+  href="https://drive.google.com/drive/folders/1snXUqZUYWED56JlQbQ7EhfT2Qb_QvTtZ?usp=drive_link"
+  class="entry-link"
+  target="_blank"
+  data-text="Hubbard-Winsor Lodge #420 Joint Installation"
+>
+  Hubbard-Winsor Lodge #420 Joint Installation
+</a>
+  </div>
+
+    </section>
+
+    <section id="contact">
+      <h2>CONTACT</h2>
+<p></p>
+      <form method="POST" action="send.php">
+        <input type="text" name="name" placeholder="Your name" required />
+        <input type="email" name="email" placeholder="Your email" required />
+        <textarea name="message" placeholder="Your message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <footer>
+      © 2026 Fraternal Photo
+    </footer>
+  </main>
+
+</body>
+</html>
