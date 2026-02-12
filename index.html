@@ -333,12 +333,21 @@ h3 {
     <section id="contact">
       <h2>CONTACT</h2>
 <p></p>
-      <form method="POST" action="send.php">
-        <input type="text" name="name" placeholder="Your name" required />
-        <input type="email" name="email" placeholder="Your email" required />
-        <textarea name="message" placeholder="Your message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
+     <form
+  action="https://formspree.io/f/xykdejwg"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
     </section>
 
     <footer>
@@ -348,5 +357,6 @@ h3 {
 
 </body>
 </html>
+
 
 
