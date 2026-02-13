@@ -24,6 +24,7 @@
       --radius: 12px;
     }
 
+
     * {
       box-sizing: border-box;
     }
@@ -343,13 +344,22 @@ h3 {
      <form
   action="https://formspree.io/f/xykdejwg"
   method="POST"
->
+> 
+    <label for="name">Name</label>
+  <input
+    type="text"
+    id="name"
+    name="name"
+    placeholder="Your name"
+    required
+  >
   <label>
-    Your email:
+    Email
     <input type="email" name="email">
   </label>
   <label>
-    Your message:
+    
+    Message
     <textarea name="message"></textarea>
   </label>
   <!-- your other form fields go here -->
@@ -364,6 +374,7 @@ h3 {
 
 </body>
 </html>
+
 
 
 
