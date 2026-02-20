@@ -275,6 +275,62 @@ h3 {
     margin-top: 6rem;
   }
 }
+
+    /* ===== MOBILE RESCUE PATCH ===== */
+
+/* Prevent weird horizontal scrolling */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Make media never overflow */
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Ensure your main container fits phones */
+.page {
+  width: min(900px, calc(100% - 2rem));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* If padding feels tight on mobile */
+@media (max-width: 768px) {
+  .page {
+    padding: 1.25rem;
+    margin-top: 5rem; /* keep your background reveal */
+  }
+
+  /* Force the 2-col section to stack */
+  .two-col {
+    grid-template-columns: 1fr !important;
+    gap: 1.25rem;
+  }
+
+  /* If your sidebar card looks cramped */
+  .card {
+    padding: 1.25rem;
+  }
+
+  /* Timeline rows: allow wrapping cleanly */
+  .entry {
+    grid-template-columns: 1fr !important;
+    gap: 0.25rem;
+  }
+
+  /* Dates won’t wrap weirdly and stay readable */
+  .date {
+    white-space: nowrap;
+  }
+
+  /* Mobile browsers hate fixed backgrounds sometimes */
+  body {
+    background-attachment: scroll;
+  }
+}
   </style>
 </head>
 <body>
@@ -395,6 +451,7 @@ h3 {
 
 </body>
 </html>
+
 
 
 
